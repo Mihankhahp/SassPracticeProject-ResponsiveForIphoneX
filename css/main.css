@@ -1,0 +1,625 @@
+@font-face {
+  font-family: Sahel;
+  src: url(../fonts/Sahel-Black.eot);
+  src: url(../fonts/Sahel-Black.ttf) format("ttf");
+  src: url(../fonts/Sahel-Black.woff) format("woff");
+  font-weight: normal;
+}
+
+.card-overlay, .card-img, .hamburger-menu .menu {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: #d3ab55;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+}
+
+.main-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+}
+
+.sub-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 100px;
+  font-weight: 300px;
+  color: #d3ab55;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 300px;
+  color: #bbb;
+  margin-bottom: 80px;
+}
+
+.mainBtn {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d3ab55;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  cursor: pointer;
+}
+
+.mainBtn:hover {
+  background-color: #d3ab55;
+  color: #262626;
+  transition: all 0.4s;
+}
+
+.card {
+  width: 33.333333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-overlay {
+  left: 0;
+}
+
+.card-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: -100%;
+  color: #fff;
+  background-color: rgba(211, 171, 85, 0.6);
+  z-index: 100;
+  transition: left 0.2s;
+}
+
+.card-overlay-heading {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-overlay-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: black;
+  background-color: #fff;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 15px;
+  border: 1px solid #262626;
+  border-radius: 25%;
+  outline: none;
+  cursor: pointer;
+}
+
+.card-img {
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300;
+}
+
+.hamburger-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.hamburger-menu .menu-line {
+  width: 100%;
+  height: 4px;
+  background-color: #d3ab55;
+  transition: all 0.5s 0.5s;
+  transform-origin: right;
+}
+
+@media (max-width: 375px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: #d3ab55;
+    border: 1vw solid #d3ab55;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    margin-right: 20px;
+  }
+  .main-name {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-size: 8vw;
+    color: #bbb;
+  }
+  .sub-name {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3vw;
+    color: #bbb;
+    text-align: center;
+  }
+  .main-heading {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 10vw;
+    font-weight: 20vw;
+    color: #d3ab55;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+  }
+  .sub-heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 6vw;
+    font-weight: 20vw;
+    color: #bbb;
+    margin-bottom: 30vw;
+  }
+  .mainBtn {
+    width: 60vw;
+    max-width: 300px;
+    height: 10vw;
+    max-height: 70px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d3ab55;
+    background-color: transparent;
+    border: 1px solid #d3ab55;
+    cursor: pointer;
+  }
+  .mainBtn:hover {
+    background-color: #d3ab55;
+    color: #262626;
+    transition: all 0.4s;
+  }
+  .card {
+    width: 100%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover .card-overlay {
+    left: 0;
+  }
+  .card-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    color: #fff;
+    background-color: rgba(211, 171, 85, 0.6);
+    z-index: 100;
+    transition: left 0.2s;
+  }
+  .card-overlay-heading {
+    font-family: "Nunito", sans-serif;
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4vw;
+  }
+  .card-overlay-paragraph {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3vw;
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .card-overlay-btn {
+    width: 19vw;
+    height: 10vw;
+    color: black;
+    background-color: #fff;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 15px;
+    border: 1px solid #262626;
+    border-radius: 25%;
+    outline: none;
+    cursor: pointer;
+  }
+  .card-img {
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  .hamburger-menu {
+    width: 10vw;
+    height: 10vw;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 300;
+  }
+  .hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  .hamburger-menu .menu-line {
+    width: 100%;
+    height: 1vw;
+    background-color: #d3ab55;
+    transition: all 0.5s 0.5s;
+    transform-origin: right;
+  }
+}
+
+.navbar {
+  position: relative;
+  z-index: 200;
+}
+
+.navbar-navigation {
+  display: flex;
+}
+
+.navbar-navigation-left {
+  width: 50vw;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  left: -50vw;
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.navbar-navigation-left .left-img {
+  width: 50%;
+  position: absolute;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.navbar-navigation-left .left-img-1 {
+  top: 15%;
+  left: 15%;
+}
+
+.navbar-navigation-left .left-img-2 {
+  top: 35%;
+  left: 25%;
+}
+
+.navbar-navigation-left .left-img-3 {
+  top: 55%;
+  left: 35%;
+}
+
+.navbar-navigation-right {
+  width: 50vw;
+  height: 100vh;
+  background-color: #1f1d1d;
+  position: fixed;
+  right: -50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.navbar-navigation .nav-list-item {
+  list-style: none;
+}
+
+.navbar-navigation .nav-list-link {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin: 50px;
+  transition: all 0.5s;
+}
+
+.navbar-navigation .nav-list-link:hover {
+  color: #d3ab55;
+  letter-spacing: 4px;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(38, 38, 38, 0.6)), url(../images/bg.jpeg) center no-repeat;
+  background-size: cover;
+}
+
+.header .header-brand {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.about-us {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-us-leftSide {
+  width: 40%;
+}
+
+.about-us-leftSide img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.about-us-rightSide {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-us-rightSide .main-heading {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.about-us-rightSide .sub-heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-us-rightSide .stars {
+  margin: 30px 0;
+}
+
+.about-us-rightSide .star {
+  font-size: 15px;
+  color: #d3ab55;
+  margin-left: 15px;
+}
+
+.about-us-rightSide .description {
+  font-size: 15px;
+  color: #bbb;
+}
+
+.about-us-rightSide .description::first-letter {
+  padding-left: 25px;
+}
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+  .gallery .cards-wrapper {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer .social-media-item {
+  list-style: none;
+}
+
+.footer .social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: color 0.7s;
+}
+
+.footer .social-media-link:hover {
+  color: #d3ab55;
+}
+
+.footer-copyright-paragraph {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #bbb;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg);
+}
+
+@media (max-width: 375px) {
+  .about-us {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .about-us-leftSide {
+    width: 0%;
+  }
+  .about-us-leftSide img {
+    width: 100%;
+    opacity: 0.7;
+  }
+  .about-us-rightSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .about-us-rightSide .main-heading {
+    font-size: 10vw;
+    margin-bottom: 20px;
+  }
+  .about-us-rightSide .sub-heading {
+    font-size: 8vw;
+    margin-bottom: 20px;
+  }
+  .about-us-rightSide .stars {
+    margin: 5vw 0;
+  }
+  .about-us-rightSide .star {
+    font-size: 3vw;
+    color: #d3ab55;
+    margin-left: 3vw;
+  }
+  .about-us-rightSide .description {
+    font-size: 4vw;
+    color: #bbb;
+  }
+  .about-us-rightSide .description::first-letter {
+    padding-left: 25px;
+  }
+  .footer {
+    padding: 7vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7vw;
+  }
+  .footer .social-media {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+  }
+  .footer .social-media-item {
+    list-style: none;
+  }
+  .footer .social-media-link {
+    text-decoration: none;
+    font-size: 10vw;
+    color: #bbb;
+    transition: color 0.7s;
+  }
+  .footer .social-media-link:hover {
+    color: #d3ab55;
+  }
+  .footer-copyright-paragraph {
+    font-size: 5vw;
+    font-family: "Nunito", sans-serif;
+    color: #bbb;
+  }
+}
+/*# sourceMappingURL=main.css.map */
